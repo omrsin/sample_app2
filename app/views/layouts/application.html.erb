@@ -4,8 +4,11 @@
 	  <%= render 'layouts/head' %>
 	</head>
 	<body>
-		<%= render 'layouts/header' %>
+		<%= render 'layouts/header' %>		
     <div class="content">
+    	<div class="container floating-flash">
+    		<%= render  'layouts/flash' %>
+    	</div>
 	    <%= yield %>
 		</div>
     <%= render 'layouts/footer' %>

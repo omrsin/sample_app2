@@ -8,8 +8,9 @@
 		    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
 		    sample application.
 		  </h2>
-
-		  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+		  <% unless signed_in? %>
+		  	<%= link_to "Sign in", signin_path, class: "btn btn-large btn-primary" %>
+		  <% end %>
 		</div>		
   </div>
 </div>

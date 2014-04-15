@@ -15,3 +15,15 @@ body {
 		}
 	}
 }
+
+.floating-flash {
+	position: relative;
+	padding: 0;
+	& > .container {
+		margin-top: 10px;		
+		position: absolute;
+		& .alert {
+			margin-bottom: 3px;
+		}
+	}
+}
