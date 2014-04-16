@@ -1,8 +1,15 @@
 @import "bootstrap";
 
-body {	
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 60px;
 	& > .content {
 		padding-top: 51px;
+		padding-bottom: 10px;
 	}
 	& footer {
 		position: absolute;
